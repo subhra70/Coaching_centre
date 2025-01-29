@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowledgeNest Coaching Center</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="seasonal-bg min-h-screen">
+    <div class="loading-container">
+      <div class="seasonal-loader">
+        <!-- Content will be added by JavaScript -->
+      </div>
+    </div>
+    <!-- Navigation and content remains same as before -->
+    <nav class="bg-orange-400 backdrop-blur-md fixed w-full z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-2xl font-bold text-blue-600">KnowledgeNest</div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-blue-600">Home</a>
+            <a href="#" class="hover:text-blue-600">Courses</a>
+            <a href="#" class="hover:text-blue-600">Faculty</a>
+            <a href="#" class="hover:text-blue-600">Fee Structure</a>
+            <a href="#" class="hover:text-blue-600">Contact</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden" id="menuButton">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="flex flex-col space-y-4">
+          <a href="#home" class="hover:text-blue-600">Home</a>
+          <a href="#" class="hover:text-blue-600">Courses</a>
+          <a href="#" class="hover:text-blue-600">Faculty</a>
+          <a href="#" class="hover:text-blue-600">Fee Structure</a>
+          <a href="#" class="hover:text-blue-600">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="container mx-auto px-6 pt-32 pb-20" id="home">
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">
+          Achieve Academic Excellence
+        </h1>
+        <p class="text-xl mb-8">
+          Personalized learning programs for students of all grades
+        </p>
+        <button
+          class="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-green-700 transition"
+        >
+          Enroll Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="experience bg-stone-400 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4">Experienced Faculty</h3>
+          <ul class="list-disc m-5">
+            <li>Learn from experienced educators with proven track records</li>
+            <li>20+ years of teaching experiences</li>
+            <li>Taught over 1000+ Students</li>
+          </ul>
+        </div>
+        <div class="courses bg-stone-400 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4">Custom Courses</h3>
+          <ul class="list-disc m-5">
+            <li>
+              Tailored programs for UGC, Central board and State board Exams
+            </li>
+            <li>20+ courses available</li>
+          </ul>
+        </div>
+        <div class="success bg-stone-400 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4">Success Guarantee</h3>
+
+          <ul class="list-disc m-5">
+            <li>95% of our students achieve top grades annually</li>
+            <li>
+              Students got placed in different companies like Google,
+              Salesforce, Goldman Sachs etc
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-20">
+      <div class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="text-xl font-bold mb-4">KnowledgeNest</h4>
+            <p>Transforming education since 2010</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-blue-400">Admissions</a></li>
+              <li><a href="#" class="hover:text-blue-400">Results</a></li>
+              <li><a href="#" class="hover:text-blue-400">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold mb-4">Contact</h4>
+            <p>
+              123 Education Street<br />Learn City, LC 456789<br />Phone: (555)
+              123-4567
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+          <p>&copy; 2023 KnowledgeNest. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
