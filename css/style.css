@@ -1,0 +1,119 @@
+.seasonal-bg {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out;
+}
+
+.winter {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.189),
+      rgba(255, 255, 255, 0.31)
+    ),
+    url("../images/background1.jpg");
+}
+
+.summer {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/background1.jpg");
+}
+
+.spring {
+  background-image: url("../images/background1.jpg");
+}
+
+.autumn {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/background1.jpg");
+}
+
+.monsoon {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/background1.jpg");
+}
+
+/* Animations */
+@keyframes fall {
+  from {
+    top: 10%;
+  }
+  to {
+    top: 110%;
+  }
+}
+
+@keyframes fall-flower {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.snow,
+.flower,
+.rain {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.snow {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  animation-name: fall;
+  filter: blur(1px);
+}
+
+.flower {
+  font-size: 1.2rem;
+  animation-name: fall-flower;
+}
+
+.rain {
+  width: 2px;
+  height: 50px;
+  background: linear-gradient(rgba(0, 0, 255, 0.5), transparent);
+  animation-name: fall;
+}
+.experience:hover,.courses:hover, .success:hover{
+  transform: translateY(-5%);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.mobile-menu.active {
+  display: block;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
